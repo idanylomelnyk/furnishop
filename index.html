@@ -6,7 +6,58 @@
     <title>FurniShop</title>
   </head>
   <body>
-    <h1>Hello world</h1>
+    <header class="header">
+      <nav class="nav">
+        <div class="logo">
+          <a class="logo__link" href="./">FurniShop</a>
+        </div>
+
+        <ul class="navigation">
+          <li class="navigation__item">
+            <a class="navigation__link" href="./">Home</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">About</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Features</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Contact</a>
+          </li>
+        </ul>
+
+        <button class="menu-toggle js-menu-toggle" type="button">
+          <img
+            class="menu-toggle__icon js-menu-toggle__icon"
+            src="./src/img/icons/menu.svg"
+            width="24"
+            height="24"
+            alt="mobile-menu-icon"
+          />
+        </button>
+
+        <div class="mobile-menu js-mobile-menu" hidden>
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="./">Home</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">About</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">Features</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="hero"></div>
+    </main>
 
     <script type="module" src="./src/main.js"></script>
   </body>

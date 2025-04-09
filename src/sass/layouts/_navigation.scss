@@ -1,0 +1,63 @@
+@use "../utils/mixins" as *;
+
+.header {
+  padding: 42px 0;
+  background-color: #23262f;
+}
+
+.nav {
+  margin: 0 auto;
+  max-width: 1188px;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  &__link {
+    display: block;
+    color: #fff;
+    font-family: Saira;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+  }
+}
+
+.navigation {
+  display: none;
+
+  @include lg {
+    display: flex;
+    gap: 64px;
+  }
+
+  &__item {
+    list-style: none;
+  }
+
+  &__link {
+    color: #fff;
+    font-family: Saira;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration: none;
+  }
+}
+
+.menu-toggle {
+  padding: 0;
+  background: none;
+  border: none;
+  z-index: 10;
+  cursor: pointer;
+
+  @include lg {
+    display: none;
+  }
+}
